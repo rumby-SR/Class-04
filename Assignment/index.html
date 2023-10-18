@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+    </head>
+    <body>
+        <h2>HTML FORMS</h2>
+        <h3>YOUR NAME:</h3>
+        <form>
+            <!-- //BOX -->
+<fieldset>
+    <br/>
+    <legend style="color: rgb(4, 87, 61);">User Registration</legend>
+<!-- //NAME -->
+
+    <label for="name">FIRST NAME</label>
+    <span style="color: brown;">*</span>
+<input id="name" placeholder="Enter your fisrt name" required /> <span style="color: brown;">*</span> <label for="lastname"> LAST NAME</label><input id="lastname" placeholder="Enter your last name" required />
+<br /><br />
+<!-- //email -->
+
+<label for="mail">Your Email</label>
+<span style="color: brown;">*</span>
+<input id="mail" type="email" placeholder="e.g test@gmail.com" required />
+<br><br>
+
+<!-- //phone -->
+<label for="phone">Your phone</label>
+<input id="phone" type="phone" placeholder="e.g 0171--------"/>
+<br><br>
+
+<!-- //Password -->
+<label for="password">Your password</label>
+<input id="password" type="password"/>
+<br><br>
+
+<!-- //Dropdown -->
+<label for="country">Choose Country</label>
+<select id="Country">
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="United States">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="India">India</option>
+    <option value="Pakistan">Pakistan</option>
+    <br><br>
+</select>
+<br><br>
+
+  <!-- //Radio Gender-->
+  <label for="gender">Gender</label>
+  <input type="radio" name="gender" id="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female">
+  <label for="female">Female</label>
+<br><br>
+
+<!-- //Date of Birth -->
+<label for="Birth">Date of Birth</label>
+<input type="date" id="birth">
+
+<!-- //Upload files -->
+<br><br>
+<label for="upload">Upload Image</label><br/>
+<input type="file" multiple />
+<br><br>
+
+<!-- //Message -->
+<label for="comment">Your Message</label><br>
+<textarea 
+id="comment" cols="50" rows="7" placeholder="Hi,......"></textarea>
+<br><br>
+
+<!-- //checkbox -->
+<input type="checkbox" id="terms" required/>
+<label for="terms">Agree to terms & Condition</label>
+<span style="color: brown;">*</span>
+
+<br><br>
+<!-- //Submit Button -->
+<input type="submit" value="Submit Forms"/>
+<input type="reset">
+</fieldset>
+        </form>
+    </body>
+</html>
